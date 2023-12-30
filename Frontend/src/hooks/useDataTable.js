@@ -47,6 +47,8 @@ export const useDataTable = ({
     setSearchKeyword(value);
   };
 
+  
+
   const submitSearchKeywordHandler = (e) => {
     e.preventDefault();
     setCurrentPage(1);

@@ -73,4 +73,5 @@ export const createPost = async ({ token }) => {
       throw new Error(error.response.data.message);
     throw new Error(error.message);
   }
+  
 };

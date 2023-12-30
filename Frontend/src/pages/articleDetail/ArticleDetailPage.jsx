@@ -103,6 +103,7 @@ const ArticleDetailPage = () => {
         </section>
       )}
     </MainLayout>
+    
   );
 };
 
