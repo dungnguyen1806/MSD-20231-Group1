@@ -257,8 +257,6 @@ const EditPost = () => {
             </button>
           </article>
         </section>
-
-        
       )}
     </div>
   );
