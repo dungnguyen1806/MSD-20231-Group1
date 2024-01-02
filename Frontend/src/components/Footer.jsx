@@ -1,20 +1,20 @@
 import React from "react";
 import {
-  AiOutlineTwitter,
-  AiFillYoutube,
-  AiFillInstagram,
+  // AiOutlineTwitter,
+  // AiFillYoutube,
+  // AiFillInstagram,
   AiFillHeart,
 } from "react-icons/ai";
-import { FaFacebook } from "react-icons/fa";
-import { BsTelegram } from "react-icons/bs";
+// import { FaFacebook } from "react-icons/fa";
+// import { BsTelegram } from "react-icons/bs";
 
-import { images } from "../constants";
+// import { images } from "../constants";
 
 const Footer = () => {
   return (
     <section className="bg-dark-hard">
       <footer className="container mx-auto grid grid-cols-10 px-5 py-10 gap-y-10 gap-x-5 md:pt-20 md:grid-cols-12 lg:grid-cols-10 lg:gap-x-10">
-        <div className="col-span-5 md:col-span-4 lg:col-span-2">
+        {/* <div className="col-span-5 md:col-span-4 lg:col-span-2">
           <h3 className="text-dark-light font-bold md:text-lg">Product</h3>
           <ul className="text-[#959EAD] text-sm mt-5 space-y-4 md:text-base">
             <li>
@@ -121,13 +121,13 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="hidden md:flex flex-col items-center space-y-4 md:col-span-12 lg:col-span-10">
           <div className="bg-primary text-white p-3 rounded-full">
             <AiFillHeart className="w-7 h-auto" />
           </div>
           <p className="font-bold italic text-dark-light">
-            Copyright © 2023. Crafted with love.
+            BLOGGIN © 2023
           </p>
         </div>
       </footer>

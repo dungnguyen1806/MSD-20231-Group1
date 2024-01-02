@@ -11,10 +11,12 @@ const Hero = () => {
           Read the most interesting articles
         </h1>
         <p className="text-dark-light mt-4 text-center md:text-xl lg:text-base xl:text-xl lg:text-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+          BLOGGIN is your go-to platform for unleashing the power of words and sharing your thoughts with the world! In this digital realm, where ideas converge and creativity knows no bounds, our blog app is your virtual haven for expression.
         </p>
-        <div className="flex flex-col gap-y-2.5 mt-10 lg:mt-6 xl:mt-10 relative">
+        <p className="text-dark-light mt-4 text-center md:text-xl lg:text-base xl:text-xl lg:text-left">
+          Check it out below for our newest post from your favorite authors!
+        </p>
+        {/* <div className="flex flex-col gap-y-2.5 mt-10 lg:mt-6 xl:mt-10 relative">
           <div className="relative">
             <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 w-6 h-6 text-[#959EAD]" />
             <input
@@ -42,7 +44,7 @@ const Hero = () => {
               User Interfaces
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="hidden lg:block lg:1/2">
         <img
