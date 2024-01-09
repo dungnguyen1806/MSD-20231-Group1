@@ -15,11 +15,11 @@ const Comments = () => {
     data: commentsData,
     isLoading,
     isFetching,
-    isLoadingDeleteData,
-    queryClient,
+    // isLoadingDeleteData,
+    // queryClient,
     searchKeywordHandler,
     submitSearchKeywordHandler,
-    deleteDataHandler,
+    // deleteDataHandler,
     setCurrentPage,
   } = useDataTable({
     dataQueryFn: () =>

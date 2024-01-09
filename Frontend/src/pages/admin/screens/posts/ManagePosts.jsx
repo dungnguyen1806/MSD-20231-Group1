@@ -1,7 +1,7 @@
 import { images, stables } from "../../../../constants";
 import { deletePost, getAllPosts } from "../../../../services/index/posts";
-import Pagination from "../../../../components/Pagination";
-import { toast } from "react-hot-toast";
+// import Pagination from "../../../../components/Pagination";
+// import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { useDataTable } from "../../../../hooks/useDataTable";
 import DataTable from "../../components/DataTable";
@@ -15,7 +15,7 @@ const ManagePosts = () => {
     isLoading,
     isFetching,
     isLoadingDeleteData,
-    queryClient,
+    // queryClient,
     searchKeywordHandler,
     submitSearchKeywordHandler,
     deleteDataHandler,
@@ -75,15 +75,14 @@ const ManagePosts = () => {
             <p className="text-gray-900 whitespace-no-wrap">
               {post.categories.length > 0
                 ? post.categories
-                    .slice(0, 3)
-                    .map(
-                      (category, index) =>
-                        `${category.title}${
-                          post.categories.slice(0, 3).length === index + 1
-                            ? ""
-                            : ", "
-                        }`
-                    )
+                  .slice(0, 3)
+                  .map(
+                    (category, index) =>
+                      `${category.title}${post.categories.slice(0, 3).length === index + 1
+                        ? ""
+                        : ", "
+                      }`
+                  )
                 : "Uncategorized"}
             </p>
           </td>
@@ -100,11 +99,11 @@ const ManagePosts = () => {
             <div className="flex gap-x-2">
               {post.tags.length > 0
                 ? post.tags.map((tag, index) => (
-                    <p>
-                      {tag}
-                      {post.tags.length - 1 !== index && ","}
-                    </p>
-                  ))
+                  <p>
+                    {tag}
+                    {post.tags.length - 1 !== index && ","}
+                  </p>
+                ))
                 : "No tags"}
             </div>
           </td>

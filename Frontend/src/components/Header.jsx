@@ -141,6 +141,16 @@ const Header = () => {
                         </button>
                       )}
 
+                      {!userState?.userInfo?.admin && (
+                        <button
+                          onClick={() => navigate("/user")}
+                          type="button"
+                          className="hover:bg-dark-hard hover:text-white px-4 py-2 text-white lg:text-dark-soft"
+                        >
+                          Dashboard
+                        </button>
+                      )}
+
                       <button
                         onClick={() => navigate("/profile")}
                         type="button"
